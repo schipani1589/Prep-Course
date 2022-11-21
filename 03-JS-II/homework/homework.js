@@ -1,10 +1,10 @@
 // No cambies los nombres de las funciones.
 
 function obtenerMayor(x, y) {
-  if(x > y) {
-    return x
+  if (x > y) {
+    return x;
   } 
-    return y
+    return y;
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
@@ -39,13 +39,13 @@ function conection(status) {
 
 function saludo(idioma) {
   if(idioma === 'aleman') {
-    return 'Guten Tag!' 
+    return 'Guten Tag!'; 
   } else if (idioma === 'mandarin') {
-    return 'Ni Hao!'
+    return 'Ni Hao!';
   } else if (idioma === 'ingles') {
-    return 'Hello!'
+    return 'Hello!';
   } else {
-    return 'hola!'
+    return 'Hola!';
   }
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
@@ -63,6 +63,8 @@ function colors(color) {
     return 'This is red';
     case 'green':
     return 'This is green';
+    case 'orange':
+    return 'This is orange';
     default:
       return 'Color not found'
   }
@@ -117,15 +119,19 @@ function fizzBuzz(numero) {
 }
 
 function operadoresLogicos(num1, num2, num3) {
-  if(num1 > num2 && num1 > num3 && num1 >= 0) {
-    return 'Número 1 es mayor y positivo';
-  } else if (num1 < 0 || num2 < 0 || num3 < 0) {
-    return 'Hay negativos';
-  } else if (num3 > nume1 && num3 > num2) {
+  if(num1 < 0 || num2 < 0 || num3 < 0) {
+    return "Hay negativos";
+  }
+  else if(num1 === 0 || num2 === 0 || num3 === 0) {
+    return "Error";
+  }
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
+    return "Número 1 es mayor y positivo";
+  }
+  else if(num3 > num1 && num3 > num2) {
     return num3 + 1;
-  } else if (num1 === 0 || num2 === 0 || num3 === 0) {
-    return 'Error';
-  } else {
+  }
+  else {
     return false;
   }
   //La función recibe tres números distintos. 
